@@ -600,35 +600,42 @@
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 filtermaindiv">
                                 <div class="row mg0gap mobview_hidden">
                                     <div class="col-12 col-sm-1 col-md-1 col-lg-1 pd0">
-                                        <h3 class="headingfiltertopstrip headingfiltertxthead"><i
+                                        <h3 class="headingfiltertopstrip headingfiltertxthead"  id="applyFilterText"><i
                                                 class="fa fa-filter"></i> Filters</h3>
+                                        <button class="btn btn-primary" style="display:none" id="applyFilter">Apply Filter</button>
                                     </div>
                                     <div class="col-12 col-sm-11 col-md-11 col-lg-11">
                                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                            <li class="nav-item mr-3">
+                                            <li class="nav-item mr-3 font-weight-bold">
                                                 <a class="nav-link" id="pills-idv-tab" data-toggle="collapse"
                                                     href="#pills-idv" role="tab" aria-controls="pills-idv"
                                                     aria-selected="true">IDV</a>
                                             </li>
-                                            <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-claims-tab" data-toggle="collapse"
-                                                    href="#pills-claims" role="tab" aria-controls="pills-claims"
-                                                    aria-selected="false">Claim Details</a>
+                                            <li class="nav-item mr-3 font-weight-bold">
+                                                <a class="nav-link" id="pills-discounts-tab" data-toggle="collapse"
+                                                    href="#pills-discounts" role="tab" aria-controls="pills-discounts"
+                                                    aria-selected="false">Discounts</a>
                                             </li>
-                                            <li class="nav-item mr-3">
+                                            <li class="nav-item mr-3 font-weight-bold">
                                                 <a class="nav-link" id="pills-addons-tab" data-toggle="collapse"
                                                     href="#pills-addons" role="tab" aria-controls="pills-addons"
                                                     aria-selected="false">Add-ons</a>
                                             </li>
-                                            <li class="nav-item mr-3">
+                                            <li class="nav-item mr-3 font-weight-bold">
+                                                <a class="nav-link" id="pills-claims-tab" data-toggle="collapse"
+                                                    href="#pills-claims" role="tab" aria-controls="pills-claims"
+                                                    aria-selected="false">Company List</a>
+                                            </li>
+                                            <li class="nav-item mr-3 font-weight-bold">
                                                 <a class="nav-link" id="pills-cng-tab" data-toggle="collapse"
                                                     href="#pills-cng" role="tab" aria-controls="pills-cng"
                                                     aria-selected="false">CNG Kit & Accessories</a>
                                             </li>
-                                            <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-discounts-tab" data-toggle="collapse"
-                                                    href="#pills-discounts" role="tab" aria-controls="pills-discounts"
-                                                    aria-selected="false">Discounts</a>
+
+                                            <li class="nav-item mr-3 font-weight-bold">
+                                                <a class="nav-link" id="pills-liability-tab" data-toggle="collapse"
+                                                    href="#pills-liability" role="tab" aria-controls="pills-liability"
+                                                    aria-selected="false">Liability Covers</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -651,99 +658,90 @@
                                                     data-placement="bottom" title="Custom" for="ownIDV">Choose
                                                     Your Own IDV</label>
                                             </div>
-
-                                            <div id="ownIDV" class="showdivownIDV" style="display: none">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <label class="mylable">Enter an IDV between</label>
-                                                        <input type="text" id="amount" class="amount" readonly
-                                                            style="border:0; color:#000;font-weight:bold;">
-                                                        <div class="slider-range"></div>
-                                                    </div>
+                                            <div class="showdivownIDV" id="ownIDV" style="display: none">
+                                                <div class="form-group mr-2">
+                                                    <label class="mylable">Enter an IDV between</label>
+                                                    <div class="slider-range"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" id="amount" class="amount form-control">
                                                 </div>
                                             </div>
+                                            <!-- <div id="ownIDV" class="showdivownIDV" style="display: none">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label class="mylable">Enter an IDV between</label>                                                       
+                                                        <div class="slider-range"></div>
+                                                    </div>
+                                                    <input type="text" id="amount" class="amount">
+                                                </div>
+                                            </div> -->
                                         </div>
                                         <div class="filterinnerdiv">
                                             <div class="row" style="width: 100%;">
-                                                <div class="col-4">
-                                                    <div class="form-group">
-                                                        <label>Exact registration date of your car</label>
-                                                        <input id="StartDate" type="Date"
-                                                            class="form-control datepicker" data-val="true"
-                                                            data-val-date="The field RegistrationDate must be a date."
-                                                            min="2020-07-03" name="RegistrationDate"
-                                                            placeholder="Trip Start Date" required="required"
-                                                            style="width:100%" value="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="LableFont">Previous year policy expiry
-                                                            date</label>
-                                                        <input id="EndDate" type="Date" class="form-control datepicker"
-                                                            data-val="true"
-                                                            data-val-date="The field RegistrationDate must be a date."
-                                                            min="2020-07-03" name="RegistrationDate"
-                                                            placeholder="Trip Start Date" required="required"
-                                                            style="width:100%" value="">
-                                                    </div>
+                                                <div class="form-group col-12 col-sm-12 col-md-3 col-lg-3">
+                                                    <label>Exact registration date of your car</label>
+                                                    <input id="StartDate" type="Date" class="form-control datepicker"
+                                                        data-val="true"
+                                                        data-val-date="The field RegistrationDate must be a date."
+                                                        min="2020-07-03" name="RegistrationDate"
+                                                        placeholder="Trip Start Date" required="required"
+                                                        style="width:100%" value="">
                                                 </div>
-
-                                                <div class="col-8">
-                                                    <div class="row">
-                                                        <div class="form-group col-6">
-                                                            <input data-val="true"
-                                                                data-val-required="The AlreadyExpired field is required."
-                                                                id="AlreadyExpired" name="AlreadyExpired"
-                                                                type="checkbox" value="true"><input
-                                                                name="AlreadyExpired" type="hidden" value="false">
-                                                            <label class="LableFont">It has been more than 90 days since
-                                                                my
-                                                                policy expired.</label>
+                                                <div class="form-group col-12 col-sm-12 col-md-3 col-lg-3">
+                                                    <label class="LableFont">Previous year policy expiry
+                                                        date</label>
+                                                    <input id="EndDate" type="Date" class="form-control datepicker"
+                                                        data-val="true"
+                                                        data-val-date="The field RegistrationDate must be a date."
+                                                        min="2020-07-03" name="RegistrationDate"
+                                                        placeholder="Trip Start Date" required="required"
+                                                        style="width:100%" value="">
+                                                </div>
+                                                <div class="form-group col-12 col-sm-12 col-md-3 col-lg-3"
+                                                    id="alreadyExpiry">
+                                                    <label class="LableFont">Have you made a claim in the past
+                                                        year?</label>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" checked
+                                                                id="PastYearClaimID1" name="PastYearClaimID" value="N">
+                                                            <label class="custom-control-label" data-toggle="tooltip"
+                                                                data-placement="bottom" title="Custom"
+                                                                for="PastYearClaimID1">No</label>
                                                         </div>
-                                                        <div class="form-group col-6" id="alreadyExpiry">
-                                                            <label class="LableFont">Have you made a claim in the past
-                                                                year?</label>
-                                                            <div class="custom-control custom-radio">
-                                                                <input type="radio" class="custom-control-input" checked
-                                                                    id="PastYearClaimID1" name="PastYearClaimID"
-                                                                    value="N">
-                                                                <label class="custom-control-label"
-                                                                    data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Custom" for="PastYearClaimID1">No</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio">
-                                                                <input type="radio" id="PastYearClaimID2"
-                                                                    name="PastYearClaimID" class="custom-control-input"
-                                                                    value="Y">
-                                                                <label class="custom-control-label"
-                                                                    data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Custom" for="PastYearClaimID2">Yes</label>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="form-group col-6" id="divNcbFilter">
-                                                            <div class="form-group" id="rwNCB">
-                                                                <label class="LableFont">Previous No Claim Bonus
-                                                                    (NCB)</label>
-                                                            </div>
-                                                            <div class="form-group">
-
-                                                                <select id="DdlPreviousNCB" class="input-md"
-                                                                    data-val="true"
-                                                                    data-val-number="The field PreviousNCB must be a number."
-                                                                    data-val-required="The PreviousNCB field is required."
-                                                                    name="PreviousNCB">
-                                                                    <option value="0">0%</option>
-                                                                    <option value="20">20%</option>
-                                                                    <option selected="selected" value="25">25%</option>
-                                                                    <option value="35">35%</option>
-                                                                    <option value="45">45%</option>
-                                                                    <option value="50">50%</option>
-                                                                </select>
-
-                                                            </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="PastYearClaimID2"
+                                                                name="PastYearClaimID" class="custom-control-input"
+                                                                value="Y">
+                                                            <label class="custom-control-label" data-toggle="tooltip"
+                                                                data-placement="bottom" title="Custom"
+                                                                for="PastYearClaimID2">Yes</label>
                                                         </div>
                                                     </div>
+
+
+                                                </div>
+                                                <div class="form-group col-12 col-sm-12 col-md-3 col-lg-3"
+                                                    id="divNcbFilter">
+
+                                                    <label class="LableFont">Previous No Claim Bonus
+                                                        (NCB)</label>
+                                                    <select id="DdlPreviousNCB" class="input-md form-control"
+                                                        data-val="true"
+                                                        data-val-number="The field PreviousNCB must be a number."
+                                                        data-val-required="The PreviousNCB field is required."
+                                                        name="PreviousNCB">
+                                                        <option value="0">0%</option>
+                                                        <option value="20">20%</option>
+                                                        <option selected="selected" value="25">25%</option>
+                                                        <option value="35">35%</option>
+                                                        <option value="45">45%</option>
+                                                        <option value="50">50%</option>
+                                                    </select>
+
+
+
                                                 </div>
                                             </div>
 
@@ -751,40 +749,8 @@
                                     </div>
                                     <div class=" collapse" id="pills-claims" role="tabpanel"
                                         aria-labelledby="pills-claims-tab">
-
                                         <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 mobileviewborderfilter">
-                                                <h6>Liability Cover</h6>
-                                                <div class="filterinnerdiv">
-
-                                                    <div class="form-group PACOVEROD flex-row align-items-center"
-                                                        id="PACOVEROD">
-                                                        <input class="chkhomecondition" id="ISPACOVERODSELECTED"
-                                                            name="ISPACOVERODSELECTED" type="radio" value="NO"> <span
-                                                            style="font-size:12px;margin-right:5px" checked> No</span>
-                                                        <input class="chkhomecondition" id="ISPACOVERODSELECTED"
-                                                            name="ISPACOVERODSELECTED" type="radio" value="YES"> <span
-                                                            style="font-size:12px;margin-right:5px"> Yes</span>
-                                                    </div>
-                                                    <div id="pAcceptCover" class="form-group" style="">
-                                                        <select id="DdlPACOVERYEAR" class="input-md form-control"
-                                                            data-val="true"
-                                                            data-val-number="The field PACOVERYEAR must be a number."
-                                                            data-val-required="The PACOVERYEAR field is required."
-                                                            name="PACOVERYEAR">
-                                                            <option selected="selected" value="0">Select PA Cover Year
-                                                            </option>
-                                                            <option value="1">1 Year</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-
-                                            </div>
-
-                                            <div class="col-12 col-sm-12 col-md-8 col-lg-8 mobileviewborderfilter">
-                                                <h6>CompanyList</h6>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 mobileviewborderfilter">
                                                 <div class="filterinnerdiv">
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input"
@@ -981,8 +947,56 @@
                                     </div>
                                     <div class="collapse" id="pills-cng" role="tabpanel"
                                         aria-labelledby="pills-cng-tab">
-                                        <div class="filterinnerdiv">
+                                        <div class="filterinnerdiv cng">
+                                            <div class="form-group">
+                                                <label>Is CNG?</label>
 
+                                                <div class="d-flex flex-row">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input"
+                                                            onclick="showcng('Y')" id="cngy" name="cng">
+                                                        <label class="custom-control-label" data-toggle="tooltip"
+                                                            data-placement="bottom" title="Custom"
+                                                            for="cngy">Yes</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="cngn"
+                                                            name="cng" onclick="showcng('N')">
+                                                        <label class="custom-control-label" data-toggle="tooltip"
+                                                            data-placement="bottom" title="Custom" for="cngn">No</label>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="form-group" style="display:none" id="cngoutfit">
+                                                <label>Out Fit/Company Fit</label>
+
+                                                <div class="d-flex flex-row">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="cngou"
+                                                            name="cngout">
+                                                        <label class="custom-control-label" data-toggle="tooltip"
+                                                            data-placement="bottom" title="Custom" for="cngou">Out
+                                                            Fit</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <label></label>
+                                                        <input type="radio" class="custom-control-input" id="cngco"
+                                                            name="cngout">
+                                                        <label class="custom-control-label" data-toggle="tooltip"
+                                                            data-placement="bottom" title="Custom" for="cngco">Company
+                                                            Fit</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group mr-1" id="cngkit" style="display: none;">
+                                                <label class="mylable">CNG/LPG-Kit</label>
+                                                <input type="number" class="form-control" id="CNGLPGKit"
+                                                    placeholder="0.00">
+                                            </div>
                                             <div class="form-group mr-1">
                                                 <label class="mylable">Car Accessories</label>
                                                 <input type="number" class="form-control" id="CarAccessories"
@@ -993,11 +1007,7 @@
                                                 <input type="number" class="form-control" id="NonElectricalAccessories"
                                                     placeholder="0.00">
                                             </div>
-                                            <div class="form-group mr-1">
-                                                <label class="mylable">CNG/LPG-Kit</label>
-                                                <input type="number" class="form-control" id="CNGLPGKit"
-                                                    placeholder="0.00">
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="collapse" id="pills-discounts" role="tabpanel"
@@ -1025,7 +1035,7 @@
                                                             class="showdivOccupationDiscountyes">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label class="mylable">Type of Occupation</label>
+
                                                                     <select id="ddlOccupation"
                                                                         class="form-control input-sm " data-val="true"
                                                                         data-val-number="The field OccupationID must be a number."
@@ -1110,6 +1120,50 @@
                                             </div>
 
 
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="pills-liability" role="tabpanel"
+                                        aria-labelledby="pills-discounts-tab">
+                                        <div class="filterinnerdiv">
+                                            <label class="p-2">Unname Passenger</label>
+                                            <div class="form-group PACOVEROD flex-row align-items-center mr-2"
+                                                id="PACOVEROD">
+                                                <input class="chkhomecondition" id="ISPACOVERODSELECTED"
+                                                    name="ISPACOVERODSELECTED" type="radio" value="NO"> <span
+                                                    style="font-size:12px;margin-right:5px" checked> No</span>
+                                                <input class="chkhomecondition" id="ISPACOVERODSELECTED"
+                                                    name="ISPACOVERODSELECTED" type="radio" value="YES"> <span
+                                                    style="font-size:12px;margin-right:5px"> Yes</span>
+                                            </div>
+                                            <div id="pAcceptCover" class="form-group mr-2" style="">
+
+                                                <select id="DdlPACOVERYEAR" class="input-md form-control"
+                                                    data-val="true"
+                                                    data-val-number="The field PACOVERYEAR must be a number."
+                                                    data-val-required="The PACOVERYEAR field is required."
+                                                    name="PACOVERYEAR">
+                                                    <option selected="selected" value="0">Unname Passenger
+                                                    </option>
+                                                    <option value="1">1 Lakhs</option>
+                                                    <option value="2">2 Lakhs</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group mr-2">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="test1">
+                                                    <label class="custom-control-label" data-toggle="tooltip"
+                                                        data-placement="bottom" title="Custom" for="test1">Legal
+                                                        Liability to Paid Driver</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mr-2">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="test2">
+                                                    <label class="custom-control-label" data-toggle="tooltip"
+                                                        data-placement="bottom" title="Custom" for="test2">PA
+                                                        Cover</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2729,22 +2783,28 @@
         });
         $(function () {
             $('#filterSidebarmob .nav-pills .nav-item .nav-link').click((e) => {
-                $('#filterSidebarmob .tab-content .collapse').each((index,element) => {
+                
+                $('#filterSidebarmob .tab-content .collapse').each((index, element) => {
                     if ('#' + $(element).attr("id") != $(e.currentTarget).attr("href"))
                         $(element).removeClass("show");
-                })
+                });
+                if ($('#filterSidebarmob .tab-content .collapse.show').length == 0) {
+                    $('#applyFilter').css('display', 'block');
+                    $('#applyFilterText').css('display', 'none');
+                } else {
+                    $('#applyFilter').css('display', 'none');
+                    $('#applyFilterText').css('display', 'block');
+                }
             })
             $(".slider-range").slider({
-                range: true,
                 min: 0,
                 max: 500,
-                values: [75, 300],
+                values: [75],
                 slide: function (event, ui) {
-                    $(".amount").val("Rs." + ui.values[0] + " - Rs." + ui.values[1]);
+                    $(".amount").val("Rs." + ui.values[0]);
                 }
             });
-            $(".amount").val("Rs." + $(".slider-range").slider("values", 0) +
-                " - Rs." + $(".slider-range").slider("values", 1));
+            $(".amount").val("Rs." + $(".slider-range").slider("values", 0));
         });
 
         function openNav() {
@@ -2774,6 +2834,7 @@
             $("input[name='IDVradio']").click(function () {
                 if ($("#ownIDV").is(":checked")) {
                     $(".showdivownIDV").show();
+                    $('.showdivownIDV').css('display', 'flex')
                 } else {
                     $(".showdivownIDV").hide();
                 }
@@ -2873,6 +2934,17 @@
             }
             else {
                 $(".AAITEXTDIV").show();
+            }
+        }
+        function showcng(value) {
+            if (value == 'Y') {
+                $("#cngoutfit").show();
+                $("#cngkit").show();
+                $("#cngoutfit").css('display', 'flex');
+            }
+            else {
+                $("#cngoutfit").hide();
+                $("#cngkit").hide();
             }
         }
     </script>

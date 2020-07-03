@@ -1577,7 +1577,7 @@ width:100%;
     flex-wrap: wrap;
 }
 .filterinnerdiv .custom-control{
-    width: 11rem;
+    width: 12rem;
 }
 .filterinnerdiv:last-child{
     border-bottom: none;
@@ -1590,7 +1590,6 @@ width:100%;
 .filterinnerdiv .form-group{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 .filterinnerdiv .form-group label{
     font-weight: normal;
@@ -3915,3 +3914,21 @@ button.Zebra_DatePicker_Icon {
     line-height: 0;
     vertical-align: top;
 }
+.custom-control{
+    display:inline-flex;
+}
+.filterinnerdiv.cng .custom-control{
+    width: auto;
+    margin-right: 1rem;
+}
+.headingcontsubheader ul li{
+    font-weight: bold;
+}
+
+.ui-slider-horizontal .ui-slider-handle{
+    top:.5em;
+  }
+  .ui-slider .ui-slider-handle{
+    width:1.5em;
+    height:1.5em;
+  }
