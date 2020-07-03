@@ -606,27 +606,27 @@
                                     <div class="col-12 col-sm-11 col-md-11 col-lg-11">
                                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                             <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-idv-tab" data-toggle="pill"
+                                                <a class="nav-link" id="pills-idv-tab" data-toggle="collapse"
                                                     href="#pills-idv" role="tab" aria-controls="pills-idv"
                                                     aria-selected="true">IDV</a>
                                             </li>
                                             <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-claims-tab" data-toggle="pill"
+                                                <a class="nav-link" id="pills-claims-tab" data-toggle="collapse"
                                                     href="#pills-claims" role="tab" aria-controls="pills-claims"
                                                     aria-selected="false">Claim Details</a>
                                             </li>
                                             <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-addons-tab" data-toggle="pill"
+                                                <a class="nav-link" id="pills-addons-tab" data-toggle="collapse"
                                                     href="#pills-addons" role="tab" aria-controls="pills-addons"
                                                     aria-selected="false">Add-ons</a>
                                             </li>
                                             <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-cng-tab" data-toggle="pill"
+                                                <a class="nav-link" id="pills-cng-tab" data-toggle="collapse"
                                                     href="#pills-cng" role="tab" aria-controls="pills-cng"
                                                     aria-selected="false">CNG Kit & Accessories</a>
                                             </li>
                                             <li class="nav-item mr-3">
-                                                <a class="nav-link" id="pills-discounts-tab" data-toggle="pill"
+                                                <a class="nav-link" id="pills-discounts-tab" data-toggle="collapse"
                                                     href="#pills-discounts" role="tab" aria-controls="pills-discounts"
                                                     aria-selected="false">Discounts</a>
                                             </li>
@@ -634,7 +634,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade" id="pills-idv" role="tabpanel"
+                                    <div class="collapse" id="pills-idv" role="tabpanel"
                                         aria-labelledby="pills-idv-tab">
                                         <div class="filterinnerdiv">
                                             <div class="custom-control custom-radio">
@@ -671,78 +671,85 @@
                                                         <input id="StartDate" type="Date"
                                                             class="form-control datepicker" data-val="true"
                                                             data-val-date="The field RegistrationDate must be a date."
-                                                            min="2020-07-03" name="RegistrationDate" placeholder="Trip Start Date"
-                                                            required="required" style="width:100%" value="">
+                                                            min="2020-07-03" name="RegistrationDate"
+                                                            placeholder="Trip Start Date" required="required"
+                                                            style="width:100%" value="">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="LableFont">Previous year policy expiry date</label>
-                                                        <input id="EndDate" type="Date"
-                                                            class="form-control datepicker" data-val="true"
+                                                        <label class="LableFont">Previous year policy expiry
+                                                            date</label>
+                                                        <input id="EndDate" type="Date" class="form-control datepicker"
+                                                            data-val="true"
                                                             data-val-date="The field RegistrationDate must be a date."
-                                                            min="2020-07-03" name="RegistrationDate" placeholder="Trip Start Date"
-                                                            required="required" style="width:100%" value="">
+                                                            min="2020-07-03" name="RegistrationDate"
+                                                            placeholder="Trip Start Date" required="required"
+                                                            style="width:100%" value="">
                                                     </div>
                                                 </div>
-                                               
-                                               <div class="col-8">
-                                                <div class="row">
-                                                    <div class="form-group col-6">
-                                                        <input data-val="true"
-                                                            data-val-required="The AlreadyExpired field is required."
-                                                            id="AlreadyExpired" name="AlreadyExpired" type="checkbox"
-                                                            value="true"><input name="AlreadyExpired" type="hidden"
-                                                            value="false">
-                                                        <label class="LableFont">It has been more than 90 days since my
-                                                            policy expired.</label>
-                                                    </div>
-                                                    <div class="form-group col-6" id="alreadyExpiry">
-                                                        <label class="LableFont">Have you made a claim in the past
-                                                            year?</label>
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" class="custom-control-input" checked
-                                                                id="PastYearClaimID1" name="PastYearClaimID" value="N">
-                                                            <label class="custom-control-label" data-toggle="tooltip"
-                                                                data-placement="bottom" title="Custom"
-                                                                for="PastYearClaimID1">No</label>
+
+                                                <div class="col-8">
+                                                    <div class="row">
+                                                        <div class="form-group col-6">
+                                                            <input data-val="true"
+                                                                data-val-required="The AlreadyExpired field is required."
+                                                                id="AlreadyExpired" name="AlreadyExpired"
+                                                                type="checkbox" value="true"><input
+                                                                name="AlreadyExpired" type="hidden" value="false">
+                                                            <label class="LableFont">It has been more than 90 days since
+                                                                my
+                                                                policy expired.</label>
                                                         </div>
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="PastYearClaimID2" name="PastYearClaimID"
-                                                                class="custom-control-input" value="Y">
-                                                            <label class="custom-control-label" data-toggle="tooltip"
-                                                                data-placement="bottom" title="Custom"
-                                                                for="PastYearClaimID2">Yes</label>
+                                                        <div class="form-group col-6" id="alreadyExpiry">
+                                                            <label class="LableFont">Have you made a claim in the past
+                                                                year?</label>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" class="custom-control-input" checked
+                                                                    id="PastYearClaimID1" name="PastYearClaimID"
+                                                                    value="N">
+                                                                <label class="custom-control-label"
+                                                                    data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Custom" for="PastYearClaimID1">No</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="PastYearClaimID2"
+                                                                    name="PastYearClaimID" class="custom-control-input"
+                                                                    value="Y">
+                                                                <label class="custom-control-label"
+                                                                    data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Custom" for="PastYearClaimID2">Yes</label>
+                                                            </div>
+
+
                                                         </div>
-    
-    
-                                                    </div>
-                                                    <div class="form-group col-6" id="divNcbFilter">
-                                                        <div class="form-group" id="rwNCB">
-                                                            <label class="LableFont">Previous No Claim Bonus
-                                                                (NCB)</label>
-                                                        </div>
-                                                        <div class="form-group">
-    
-                                                            <select id="DdlPreviousNCB" class="input-md" data-val="true"
-                                                                data-val-number="The field PreviousNCB must be a number."
-                                                                data-val-required="The PreviousNCB field is required."
-                                                                name="PreviousNCB">
-                                                                <option value="0">0%</option>
-                                                                <option value="20">20%</option>
-                                                                <option selected="selected" value="25">25%</option>
-                                                                <option value="35">35%</option>
-                                                                <option value="45">45%</option>
-                                                                <option value="50">50%</option>
-                                                            </select>
-    
+                                                        <div class="form-group col-6" id="divNcbFilter">
+                                                            <div class="form-group" id="rwNCB">
+                                                                <label class="LableFont">Previous No Claim Bonus
+                                                                    (NCB)</label>
+                                                            </div>
+                                                            <div class="form-group">
+
+                                                                <select id="DdlPreviousNCB" class="input-md"
+                                                                    data-val="true"
+                                                                    data-val-number="The field PreviousNCB must be a number."
+                                                                    data-val-required="The PreviousNCB field is required."
+                                                                    name="PreviousNCB">
+                                                                    <option value="0">0%</option>
+                                                                    <option value="20">20%</option>
+                                                                    <option selected="selected" value="25">25%</option>
+                                                                    <option value="35">35%</option>
+                                                                    <option value="45">45%</option>
+                                                                    <option value="50">50%</option>
+                                                                </select>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                               </div>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-claims" role="tabpanel"
+                                    <div class=" collapse" id="pills-claims" role="tabpanel"
                                         aria-labelledby="pills-claims-tab">
 
                                         <div class="row">
@@ -750,7 +757,8 @@
                                                 <h6>Liability Cover</h6>
                                                 <div class="filterinnerdiv">
 
-                                                    <div class="form-group PACOVEROD flex-row align-items-center" id="PACOVEROD">
+                                                    <div class="form-group PACOVEROD flex-row align-items-center"
+                                                        id="PACOVEROD">
                                                         <input class="chkhomecondition" id="ISPACOVERODSELECTED"
                                                             name="ISPACOVERODSELECTED" type="radio" value="NO"> <span
                                                             style="font-size:12px;margin-right:5px" checked> No</span>
@@ -848,7 +856,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="tab-pane fade" id="pills-addons" role="tabpanel"
+                                    <div class="collapse" id="pills-addons" role="tabpanel"
                                         aria-labelledby="pills-addons-tab">
                                         <div class="filterinnerdiv">
                                             <div class="custom-control custom-checkbox">
@@ -968,10 +976,10 @@
                                                     data-placement="bottom" title="Custom"
                                                     for="PAToOwnerDriverCover">Loss of Vehicle Key Cover</label>
                                             </div>
-                                           
+
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-cng" role="tabpanel"
+                                    <div class="collapse" id="pills-cng" role="tabpanel"
                                         aria-labelledby="pills-cng-tab">
                                         <div class="filterinnerdiv">
 
@@ -992,7 +1000,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-discounts" role="tabpanel"
+                                    <div class="collapse" id="pills-discounts" role="tabpanel"
                                         aria-labelledby="pills-discounts-tab">
                                         <div class="filterinnerdiv row">
                                             <div class="form-group col-2">
@@ -2706,6 +2714,7 @@
     </script>
 
     <script>
+
         $(window).scroll(function () {
             if ($(this).scrollTop() > 1) {
                 $('.header').addClass("d-none");
@@ -2719,6 +2728,12 @@
             }
         });
         $(function () {
+            $('#filterSidebarmob .nav-pills .nav-item .nav-link').click((e) => {
+                $('#filterSidebarmob .tab-content .collapse').each((index,element) => {
+                    if ('#' + $(element).attr("id") != $(e.currentTarget).attr("href"))
+                        $(element).removeClass("show");
+                })
+            })
             $(".slider-range").slider({
                 range: true,
                 min: 0,
@@ -2767,32 +2782,32 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
             $("input:radio[name=PastYearClaimID]").click(function () {
-                            if ($(this).val() == "Y") {
-                                $("#divNcbFilter").hide();
-                            }
-                            else {
-                                $("#divNcbFilter").show();
-                            }
-                        });
+                if ($(this).val() == "Y") {
+                    $("#divNcbFilter").hide();
+                }
+                else {
+                    $("#divNcbFilter").show();
+                }
+            });
 
-                        $("input:radio[name=PastYearClaimID]").click(function () {
-                            if ($(this).val() == "Y") {
-                                $("#divNcbFilter").hide();
-                            }
-                            else {
-                                $("#divNcbFilter").show();
-                            }
-                        });
+            $("input:radio[name=PastYearClaimID]").click(function () {
+                if ($(this).val() == "Y") {
+                    $("#divNcbFilter").hide();
+                }
+                else {
+                    $("#divNcbFilter").show();
+                }
+            });
             $("#AlreadyExpired").click(function () {
-                            if ($('#AlreadyExpired')[0].checked == true) {
-                                $('#alreadyExpiry').hide();
-                                $('#expiryDateDiv').hide();
-                            }
-                            else {
-                                $('#alreadyExpiry').show();
-                                $('#expiryDateDiv').show();
-                            }
-                        });
+                if ($('#AlreadyExpired')[0].checked == true) {
+                    $('#alreadyExpiry').hide();
+                    $('#expiryDateDiv').hide();
+                }
+                else {
+                    $('#alreadyExpiry').show();
+                    $('#expiryDateDiv').show();
+                }
+            });
             var PastYearClaimIDList = $("input:radio[name=PastYearClaimID]");
             $.each(PastYearClaimIDList, function (i, item) {
                 if (item.checked && item.value == "N") {
@@ -2806,41 +2821,41 @@
                 }
             }
             $("input:radio[name=ISPACOVERODSELECTED]").click(function () {
-                            if ($(this).val() == "NO") {
-                                $("#btnThankYou").prop("disabled", false);
-                                $('#DdlPACOVERYEAR').prop('enabled', 'enabled');
-                                $('#DdlPACOVERYEAR  option[value="0"]').prop('selected', true)
-                                $('#pAcceptdeclaration').show();
-                                $('#pAcceptCover').hide();
-                            }
-                            else {
-                                $("#btnThankYou").prop("disabled", false);
-                                $('#pAcceptCover').show();
-                                $('#pAcceptdeclaration').hide();
-                                $('#chkTermCond').prop("checked", false);
-                            }
-                        });
+                if ($(this).val() == "NO") {
+                    $("#btnThankYou").prop("disabled", false);
+                    $('#DdlPACOVERYEAR').prop('enabled', 'enabled');
+                    $('#DdlPACOVERYEAR  option[value="0"]').prop('selected', true)
+                    $('#pAcceptdeclaration').show();
+                    $('#pAcceptCover').hide();
+                }
+                else {
+                    $("#btnThankYou").prop("disabled", false);
+                    $('#pAcceptCover').show();
+                    $('#pAcceptdeclaration').hide();
+                    $('#chkTermCond').prop("checked", false);
+                }
+            });
             $("#PACOVEROD input[name='rdThankYouSel']").click(function () {
-                            if ($(this).val() === 'NO') {
-                                $('#PACOVERYEAR').prop('enabled', 'enabled');
-                                $('#PACOVERYEAR  option[value="0"]').prop('selected', true)
-                                $('#pAcceptdeclaration').show();
-                                $('#pAcceptCover').hide();
+                if ($(this).val() === 'NO') {
+                    $('#PACOVERYEAR').prop('enabled', 'enabled');
+                    $('#PACOVERYEAR  option[value="0"]').prop('selected', true)
+                    $('#pAcceptdeclaration').show();
+                    $('#pAcceptCover').hide();
 
-                            }
-                            else if ($(this).val() === 'YES') {
-                                $('#pAcceptCover').show();
-                                $('#pAcceptdeclaration').hide();
-                                $('#chkTermCond').prop("checked", false);
-                                //if (model.PolicyType == "Renew")
-                                //{
-                                //    $('#PACOVERYEAR').removeAttr("disabled")
-                                //    $('#PACOVERYEAR option[value="1"]').prop('selected', true)
-                                //    $('#PACOVERYEAR').prop('disabled', 'disabled');
-                                //}
+                }
+                else if ($(this).val() === 'YES') {
+                    $('#pAcceptCover').show();
+                    $('#pAcceptdeclaration').hide();
+                    $('#chkTermCond').prop("checked", false);
+                    //if (model.PolicyType == "Renew")
+                    //{
+                    //    $('#PACOVERYEAR').removeAttr("disabled")
+                    //    $('#PACOVERYEAR option[value="1"]').prop('selected', true)
+                    //    $('#PACOVERYEAR').prop('disabled', 'disabled');
+                    //}
 
-                            }
-                        });
+                }
+            });
         })
     </script>
 
