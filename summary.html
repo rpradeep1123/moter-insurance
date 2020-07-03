@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <title>Pinki Tours & Travels</title>
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/adminlte.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/icomoon-font.min.css"> 
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">    
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">       
+
+    <!-- Slick Slider CSS -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <style>        
+        .slick-prev {
+            left: 25px;
+        }
+        .slick-next {
+            right: 50px;
+        }
+        .slick-prev:before {
+            content: "\f053";
+            padding: 9px 8px;
+        }
+        .slick-next:before {
+            content: "\f054";
+                padding: 9px 15px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: "FontAwesome";
+            font-size: 35px;        
+            color: #fff;      
+        }   
+    </style>  
+   
+    <link href="css/icon-font.min.css" rel="stylesheet">
+    <link href="css/imagehover.css" rel="stylesheet" media="all">   
+    
+</head>
+
+<body class="hold-transition sidebar-mini"> 
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Home">Home</a>
+          </li>
+        </ul>
+  
+        <!-- SEARCH FORM -->
+  
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit" data-toggle="tooltip" data-placement="bottom"
+            title="Search">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+  
+  
+        <!-- Right navbar links -->
+        <ul class="navbar-nav menutopnav ml-auto d-none">
+          <li><a href="#" data-toggle="modal" data-target="#emailplanesModal" data-toggle="tooltip"
+              data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#talkheadpopupModal" data-toggle="tooltip"
+              data-placement="bottom" title="Contact"><i class="fa fa-phone"></i></a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+  
+            <!-- Messages Dropdown Menu -->
+           
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="fa fa-bell"></i>
+                <span class="badge badge-warning navbar-badge" data-toggle="tooltip" data-placement="bottom"
+                title="Notifications">15</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item" data-toggle="tooltip" data-placement="bottom"
+                title="Messages">
+                  <i class="fa fa-envelope mr-2"></i> 4 new messages
+                  <span class="float-right text-muted text-sm">3 mins</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item" data-toggle="tooltip" data-placement="bottom"
+                title="Requests">
+                  <i class="fa fa-users mr-2"></i> 8 friend requests
+                  <span class="float-right text-muted text-sm">12 hours</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item" data-toggle="tooltip" data-placement="bottom"
+                title="Reports">
+                  <i class="fa fa-file mr-2"></i> 3 new reports
+                  <span class="float-right text-muted text-sm">2 days</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer" data-toggle="tooltip" data-placement="bottom"
+                title="See all notifications">See All Notifications</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom"
+              title="Custom">
+                <i class="fa fa-th-large"></i>
+              </a>
+            </li>
+          </ul>
+      </nav>
+      <!-- /.navbar -->
+  
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="../../index3.html" class="brand-link" data-toggle="tooltip" data-placement="bottom"
+        title="Home">
+          <img src="img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+            style="opacity: .8">
+          <span class="brand-text font-weight-light">D.A.Y Insurance</span>
+        </a>
+  
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block" data-toggle="tooltip" data-placement="bottom"
+              title="View Profile">Alexander Pierce</a>
+            </div>
+          </div>
+  
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+              <li class="nav-item">
+                <a href="../widgets.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Dashboard">
+                  <i class="nav-icon fa fa-th"></i>
+                  <p>
+                    Dashboard
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Book Insurance">
+                  <i class="nav-icon fa fa-edit"></i>
+                  <p>
+                    Book Insurance
+                    <i class="right fa fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Insurance 1">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Book Insurance v1</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Insurance 2">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Book Insurance v2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Insurance 3">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Book Insurance v3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Manage">
+                  <i class="nav-icon fa fa-edit"></i>
+                  <p>
+                    Manage
+                    <i class="right fa fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Manage 1">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Manage v1</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Manage 2">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Manage v2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Manage 3">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Manage v3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Support">
+                  <i class="nav-icon fa fa-edit"></i>
+                  <p>
+                    Support
+                    <i class="right fa fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Support 1">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Support v1</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Support 2">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Support v2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Support 3">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Support v3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Report">
+                  <i class="nav-icon fa fa-edit"></i>
+                  <p>
+                    Report
+                    <i class="right fa fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Report 1">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Report v1</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Report 2">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Report v2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                    title="Report 3">
+                      <i class="fa fa-circle nav-icon"></i>
+                      <p>Report v3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="../widgets.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Request CallBack">
+                  <i class="nav-icon fa fa-edit"></i>
+                  <p>
+                    Request Callback
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../widgets.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                title="Logout">
+                  <p>
+                    Logout
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+ <div class="content-wrapper">   
+    
+ <div class="container-fluid">
+
+    <!-- social icons right side -->
+    <div class="float-sm">
+        <div class="fl-fl float-wt">
+          <i class="fa fa-whatsapp  new-icoright"></i>
+          <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+          title="whatsapp">whatsapp</a>
+        </div>
+        <div class="fl-fl float-fb">
+          <i class="fa fa-facebook  new-icoright"></i>
+          <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+          title="Facebook">facebook</a>
+        </div>
+        <div class="fl-fl float-tw">
+          <i class="fa fa-twitter  new-icoright"></i>
+          <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+          title="Twitter">Twitter</a>
+        </div>
+        <div class="fl-fl float-lin">
+          <i class="fa fa-linkedin  new-icoright"></i>
+          <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+          title="Linked In">Linkedin</a>
+        </div>
+        <div class="fl-fl float-ins">
+          <i class="fa fa-instagram new-icoright"></i>
+          <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+          title="Instagram">instagram</a>
+        </div>
+        <div class="fl-fl float-pn">
+          <i class="fa fa-google-plus new-icoright"></i>
+          <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+          title="Google +"> Google +</a>
+        </div>
+      </div>
+       <!-- social icons right side -->
+     
+    <!-- Header -->
+    <div class="row headertop header">
+        <div class="container">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+
+              <div class="col-2 col-sm-3 col-md-3 col-lg-3 logodiv" data-toggle="tooltip" data-placement="bottom"
+              title="Home">
+                <a href="#" class="desktoplogoimg"><img src="img/logo.png"></a>
+                <a href="#" class="mobilelogoimg"><img src="img/logo-mob.png"></a>
+              </div>
+
+              <div class="col-10 col-sm-9 col-md-9 col-lg-9">
+                <ul class="menutopnav ">
+                  <li><a href="#" data-toggle="modal" data-target="#emailplanesModal" data-toggle="tooltip"
+                      data-placement="bottom" title="Email"><i class="fa fa-envelope"></i> Email Plans</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#talkheadpopupModal" data-toggle="tooltip"
+                      data-placement="bottom" title="Contact"><i class="fa fa-phone"></i> Talk To Expert</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Header -->
+    
+    <div class="row mainrowsubheader">
+        <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-4 headingcontsubheader">
+                        <h3>MARUTI ALTO LX CNG (796 cc)</h3>
+                        <ul>
+                            <li>Private Car <span></span></li>
+                            <li>2019 <span></span></li>
+                            <li>CNG <span></span></li>
+                            <li>DL1 (NORTH DELHI)</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-4 mainsubheadercenterdiv">
+                        <div class="row">
+                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 contactemailsubhead d-flex flex-column">
+                                <div>
+                                    <p style="display:inline-block">Mobile No:</p><span> ######869</span><input type="text" style="display:none" class="form-control form-control-sm" placeholder="Mobile Number">
+                                </div>
+                                <div>
+                                    <p style="display:inline-block">Email ID:</p><span> ##ri@gmail.com</span><input type="text"  style="display:none" class="form-control form-control-sm" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 contactemailsubhead">
+                                <p><a href="#" onclick="makeEditable()" data-toggle="tooltip" data-placement="bottom" title="Edit">Edit</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="row maininnerpagebottomgap">
+        <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">                       
+
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-8">                            
+                            
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5>Confirm your details</h5>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 leftsidesummerydatamaindiv">                 <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                                    <a class="nav-link active" id="OwnerDetails-tab" data-toggle="pill" href="#OwnerDetails" role="tab" aria-controls="OwnerDetails" aria-selected="true">Owner Details</a>
+                                    <a class="nav-link" id="NomineeDetails-tab" data-toggle="pill" href="#NomineeDetails" role="tab" aria-controls="NomineeDetails" aria-selected="false">Nominee Details</a>
+                                    <a class="nav-link" id="VehicleDetails-tab" data-toggle="pill" href="#VehicleDetails" role="tab" aria-controls="VehicleDetails" aria-selected="false">Vehicle Details</a>
+                                    <a class="nav-link" id="Proposal-tab" data-toggle="pill" href="#Proposal" role="tab" aria-controls="Proposal" aria-selected="false">Proposal</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="OwnerDetails" role="tabpanel" aria-labelledby="OwnerDetails-tab">
+                                            <h3 class="headingbookingtabmaincontdiv"><span>Owner Details</span></h3>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                       <div class="row mg0">
+                                                            <div class="col-12 col-sm-3 col-md-3 col-lg-3 pd5">
+                                                                <label class="mylable">Title</label>
+                                                                <select class="custom-select myinputdesign">
+                                                                    <option selected>Title</option>
+                                                                    <option value="1">Mr</option>
+                                                                    <option value="2">Mrs</option>
+                                                                    <option value="3">Ms</option>
+                                                                </select> 
+                                                            </div>
+                                                            <div class="col-12 col-sm-9 col-md-9 col-lg-9 pd5">
+                                                                <label class="mylable">Full Name</label>
+                                                                <input type="text" class="form-control myinputdesign" id="name" placeholder="First Name - Milddle Name - Last Name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Mobile Number</label>
+                                                                <input type="number" class="form-control myinputdesign" id="number" placeholder="Mobile Number">
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Email Address</label>
+                                                                <input type="email" class="form-control myinputdesign" id="email" placeholder="Email Address">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Car Registration Address</label>
+                                                                <input type="text" class="form-control myinputdesign" id="registrationaddress" placeholder="Car Registration Address">
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Pincode</label>
+                                                                <input type="text" class="form-control myinputdesign" id="pincode" placeholder="Pincode">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Date of Birth</label>
+                                                                <input type="text" class="form-control myinputdesign" id="dob" placeholder="Date of Birth">
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pd5">
+                                                                <div class="form-group buttongrupsteps">
+                                                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Continue">Continue</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="NomineeDetails" role="tabpanel" aria-labelledby="NomineeDetails-tab">
+                                            <h3 class="headingbookingtabmaincontdiv"><span>Nominee Details</span></h3>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                       <div class="row mg0">
+                                                            <div class="col-12 col-sm-3 col-md-3 col-lg-3 pd5">
+                                                                <label class="mylable">Select Title</label>
+                                                                <select class="custom-select myinputdesign">
+                                                                    <option selected>Title</option>
+                                                                    <option value="1">Mr</option>
+                                                                    <option value="2">Mrs</option>
+                                                                    <option value="3">Ms</option>
+                                                                </select> 
+                                                            </div>
+                                                            <div class="col-12 col-sm-9 col-md-9 col-lg-9 pd5">
+                                                                <label class="mylable">Nominee</label>
+                                                                <input type="text" class="form-control myinputdesign" id="name" placeholder="Name of Nominee">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Nominee Relation</label>
+                                                                <select class="custom-select myinputdesign">
+                                                                    <option selected>Select Nominee Relation</option>
+                                                                    <option value="">Spouse</option>
+                                                                    <option value="">Son</option>
+                                                                    <option value="">Daughter</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Nominee Age</label>
+                                                                <select class="custom-select myinputdesign">
+                                                                    <option value="" selected="" disabled="">Select Nominee Age</option>
+                                                                    <option value="">18</option>
+                                                                    <option value="">19</option>
+                                                                    <option value="">20</option>
+                                                                    <option value="">21</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Registration Number</label>
+                                                                <input type="text" class="form-control myinputdesign" id="registrationaddress" placeholder="Registration Number">
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pd5">
+                                                                <div class="form-group buttongrupsteps">
+                                                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Continue">Continue</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="VehicleDetails" role="tabpanel" aria-labelledby="VehicleDetails-tab">
+                                            <h3 class="headingbookingtabmaincontdiv"><span>Vehicle Details</span></h3>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                       <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Previous Insurer</label>
+                                                                <select class="custom-select myinputdesign">
+                                                                    <option value="" selected="" disabled="">Previous Insurer</option>
+                                                                    <option value="">New India Assurance</option>
+                                                                    <option value="">Kotak General Insurance</option>
+                                                                </select> 
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Policy Number</label>
+                                                                <input type="text" class="form-control myinputdesign" id="name" placeholder="Policy Number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Policy Issue Date</label>
+                                                                <input type="text" class="form-control myinputdesign" id="number" placeholder="Policy Issue Date">
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Manufacturing Date</label>
+                                                                <input type="text" class="form-control myinputdesign" id="email" placeholder="Manufacturing Date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Engine Number</label>
+                                                                <input type="text" class="form-control myinputdesign" id="registrationaddress" placeholder="Engine Number">
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Chasis Number</label>
+                                                                <input type="text" class="form-control myinputdesign" id="pincode" placeholder="Chasis Number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                <label class="mylable">Car Financed</label>
+                                                                <select class="custom-select myinputdesign">
+                                                                    <option value="" selected="" disabled="">Is your Car Financed</option>
+                                                                    <option value="y">Yes</option>
+                                                                    <option value="n">No</option>
+                                                                </select> 
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pd5">
+                                                                <div class="form-group buttongrupsteps">
+                                                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Continue">Continue</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="Proposal" role="tabpanel" aria-labelledby="Proposal-tab">
+                                            <h3 class="headingbookingtabmaincontdiv"><span>Proposal Detail</span></h3>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 listsummeryformmaindivleftside">
+                                                        <div class="row mg0">
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pd5 mainfieldsetdivcontainer">
+                                                                <fieldset>
+                                                                    <legend>Personal Details</legend>
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 maininfocoldivproposaldiv">
+                                                                        <div class="row mg0">
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Full Name</p>
+                                                                                    <h3>Avishek Singh</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Dob</p>
+                                                                                    <h3>01-01-1988</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Address 1</p>
+                                                                                    <h3>B-180, Second Floor,</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Address 2</p>
+                                                                                    <h3>Gujranwala Town</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Address 3</p>
+                                                                                    <h3>New Delhi, India</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Contact No</p>
+                                                                                    <h3>9898989898</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Email ID</p>
+                                                                                    <h3>avishek@gmail.com</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>City</p>
+                                                                                    <h3>Delhi</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>State</p>
+                                                                                    <h3>Delhi</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Pincode</p>
+                                                                                    <h3>10052</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Nominee Name</p>
+                                                                                    <h3>Rahul</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset> 
+                                                            </div>
+
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pd5 mainfieldsetdivcontainer">
+                                                                <fieldset>
+                                                                    <legend>Vehicle Details</legend>
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 maininfocoldivproposaldiv">
+                                                                        <div class="row mg0">
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Manufacturer</p>
+                                                                                    <h3>Maruti</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Vehicle</p>
+                                                                                    <h3>Alto</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Variant</p>
+                                                                                    <h3>LXI</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Fuel</p>
+                                                                                    <h3>Petrol</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Cubic Capacity</p>
+                                                                                    <h3>786</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Registration no</p>
+                                                                                    <h3>DL13 at5544</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset> 
+                                                            </div>
+
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pd5 mainfieldsetdivcontainer">
+                                                                <fieldset>
+                                                                    <legend>Policy Details</legend>
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 maininfocoldivproposaldiv">
+                                                                        <div class="row mg0">
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Policy Type</p>
+                                                                                    <h3>Renew</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Chesis No</p>
+                                                                                    <h3>34586589</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Premium</p>
+                                                                                    <h3>5770</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Fuel</p>
+                                                                                    <h3>Petrol</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Policy For</p>
+                                                                                    <h3>Private Car</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Service Tax</p>
+                                                                                    <h3>880</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>IDV</p>
+                                                                                    <h3>218545</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 pd5">
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 listinfosummarydetail">
+                                                                                    <p>Engine No</p>
+                                                                                    <h3>5845265365248</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5>Your Plan Summary</h5>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 rightsidesummerymaindiv">                                
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 imgcontrightsidesummery">
+                                        <img src="img/logo-list.png" alt="" />
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 summerylistrightsideidv">
+                                        <h3>IDV</h3>
+                                        <p>Plan Type</p>
+                                    </div>
+                                    <div class="col-5 col-sm-5 col-md-5 col-lg-5 rightsidesummerylist">
+                                        <h3><i class="fa fa-inr"></i> 36,60,400</h3>
+                                        <p>1+3 Bundled Policy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 importantplanmaindivright">
+                                <p data-toggle="collapse" href="#importantplan" role="button" aria-expanded="false" aria-controls="importantplan">Plan Features <i class="fa fa-angle-down"></i></p>
+                                <div class="collapse" id="importantplan">
+                                    <div class="contdivimportantplan">
+                                        <h5>Important Plan Features</h5>
+                                        <h6><i class="fa fa-circle"></i> 1 Year Own Damage + 3 Years Third Party</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 summeryrightpricecont">
+                                        <p>Premium Amount</p>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 summeryrightpricecont">
+                                        <h5><i class="fa fa-inr"></i> 36,000</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 summeryrightpricecont">
+                                        <p>Service Tax/GST</p>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 summeryrightpricecont">
+                                        <h5><i class="fa fa-inr"></i> 36,000</h5>
+                                    </div>
+                                </div>
+                                <div class="row summeryfinalpricecontrightside">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 summeryrightpricecont">
+                                        <h4>You'll Pay</h4>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 summeryrightpricecont">
+                                        <h3><i class="fa fa-inr"></i> 36,000</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="bottom" title="Agree Terms and Conditions">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label labelrightsidecontcheck" for="customCheck1">I agree to the <a href="#">Terms & Conditions</a> and confirm that this car is not a commercial vehicle and my previous policy is a comprehensive/package policy & I confirm that my vehicle has a valid PUC certificate.</label>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <button type="button" class="btn btn-primary btnsummeryrightside" data-toggle="tooltip" data-placement="bottom" title="Pay Securely"><i class="fa fa-lock"></i> Pay Securely</button>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 sideleftbox_booking pd0leftright offers">
+                                        <h2>OFFERS</h2>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label labeloffer" for="customRadio1">CITISUPER </label>
+                                                <span class="removetxt" hidden><a href="#">Remove</a></span>
+                                            </div>
+                                            <p class="bottomdarkfont discount-text">
+                                                Use CITISUPER to get INR 2332 cashback to card. Valid on CITI Debit &amp; Credit Cards. Hurry offer valid for today.
+                                                <a href="#">Know More</a>
+                                            </p>
+                                            <p class="bottomdarkfont discount-applied" hidden>
+                                                Deal Code Applied. INR 2332 cashback to card will be processed as per T&amp;C
+                                                <a href="#">View Terms &amp; Conditions</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label labeloffer" for="customRadio2">FLYNEW</label>
+                                                <span class="removetxt" hidden><a href="#">Remove</a></span>
+                                            </div>
+                                            <p class="bottomdarkfont discount-text">
+                                                Use this to get INR 1200 Cashback to Wallet
+                                                <a href="#">Know More</a>
+                                            </p>
+                                            <p class="bottomdarkfont discount-applied" hidden>
+                                                Deal Code Applied. INR 1200 Cashback to Wallet will be processed as per T&amp;C
+                                                <a href="#">View Terms &amp; Conditions</a>
+                                            </p>
+                                        </div>
+                                                                    
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+                
+            </div>                
+        </div>
+    </div>
+     
+     
+    <!-- Footer -->
+   <div class="row footermainrowdiv">
+    <div class="container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 leftsideaboutfootcont">
+                    <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+
+                    <p>The product information for comparison displayed on this website is of the insurers with whom our company has an agreement.</p>
+                            
+                    <p>Product information is authentic and solely based on the information received from the Insurer © Copyright 2019 pinkitravels.com. All Rights Reserved.</p>
+                            
+                    <p>All savings provided by insurers.</p>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+
+        <!-- Email Plane Modal -->
+    <div class="modal fade" id="emailplanesModal" tabindex="-1" role="dialog" aria-labelledby="emailplanesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-body">                    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 closebtnpopupdiv">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <form>
+                                    <div class="form-group">
+                                    <label class="mylable">Email address</label>
+                                    <input type="email" class="form-control myinputdesign" id="emailpopup" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>                                   
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Email Plane Modal close -->
+
+    <!-- talk popup header Plane Modal -->
+    <div class="modal fade" id="talkheadpopupModal" tabindex="-1" role="dialog" aria-labelledby="talkheadpopupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">               
+
+                <div class="modal-body">                    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 closebtnpopupdiv">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 talkheadpopupheader">
+                                <h5><i class="fa fa-phone"></i></h5>
+                                <h3>We will call you soon!</h3>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <p class="ptagtalkpopupheader">You can also reach us directily on these toll-free numbers:</p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 calltalknomaindivpopuphead">
+                                <h3>Have Not Paid Yet (Sales)</h3>
+                                <p>9999-999-9999</p>
+                            </div> 
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 calltalknomaindivpopuphead">
+                                <h3>Have Already Paid (Services)</h3>
+                                <p>9999-999-9999</p>
+                            </div>           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- talk popup header Modal close -->
+
+     
+    </div>
+   
+</div>
+<footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.1
+    </div>
+    <strong>Copyright &copy; 2014-2020 <a href="#">D.A.Y Insurance Broker Ltd</a>.</strong> All rights
+    reserved.
+  </footer>
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/adminlte.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+           
+
+    <script src="js/slick.js"></script>      
+  
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        function makeEditable(){
+            $(".contactemailsubhead span").toggle();
+            $(".contactemailsubhead input").toggle();
+        }
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('.header').addClass("d-none");
+				$('.main-header').addClass("fixed-top");
+				$('.menutopnav').addClass("d-flex");
+            } else {
+                $('.header').removeClass("d-none");
+				$('.main-header').removeClass("fixed-top");
+				$('.menutopnav').addClass("d-none");
+				$('.menutopnav').removeClass("d-flex");
+            }
+        });
+
+        // Slick Slider
+        $(document).ready(function () {
+           $('.singleroomsuites').slick();
+           $('.activitiesslider').slick({
+             dots: true,
+             infinite: false,
+             speed: 300,
+             slidesToShow: 4,
+             slidesToScroll: 4,
+             responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+                }
+               },
+              {
+                breakpoint: 600,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+               }
+                }                
+                ]
+          });          
+
+        });
+        // Slick Slider
+    </script>   
+
+<script>
+    $(function () {
+        $('.offers input[type=radio]').on('change', function (e) {
+            var target = $(e.target);
+            var targets = $('.offers input[type=radio]:not(:checked)');
+            $.each(targets, function(index, target) {
+                $(target).siblings('label').css('background-color', '');
+                $(target).siblings('span.removetxt').attr('hidden', true);
+                $(target).closest('div.custom-control.custom-radio').siblings('p.bottomdarkfont.discount-text').removeAttr('hidden');
+                $(target).closest('div.custom-control.custom-radio').siblings('p.bottomdarkfont.discount-applied').attr('hidden', true);
+            });
+            target.siblings('label').css('background-color', 'yellowgreen');
+            target.siblings('span.removetxt').removeAttr('hidden');
+            target.closest('div.custom-control.custom-radio').siblings('p.bottomdarkfont.discount-text').attr('hidden', true);
+            target.closest('div.custom-control.custom-radio').siblings('p.bottomdarkfont.discount-applied').removeAttr('hidden');
+        });
+        $('.offers span.removetxt').on('click', 'a', function (e) {
+            e.preventDefault();
+            var target = $(e.target);
+            target.parents('span.removetxt').siblings('input[type=radio]').removeAttr('checked');
+            target.parents('span.removetxt').siblings('label').css('background-color', '');
+            target.parents('div.custom-control.custom-radio').siblings('p.bottomdarkfont.discount-text').removeAttr('hidden');
+            target.parents('div.custom-control.custom-radio').siblings('p.bottomdarkfont.discount-applied').attr('hidden', true);
+        });
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+    
+
+</body>
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <title>Pinki Tours & Travels</title>
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/adminlte.min.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/icomoon-font.min.css">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">    
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">       
+
+    <!-- Slick Slider CSS -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+	
+	
+    <style>        
+        .slick-prev {
+            left: 25px;
+        }
+        .slick-next {
+            right: 50px;
+        }
+        .slick-prev:before {
+            content: "\f053";
+            padding: 9px 8px;
+        }
+        .slick-next:before {
+            content: "\f054";
+                padding: 9px 15px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: "FontAwesome";
+            font-size: 35px;        
+            color: #fff;      
+        }   
+    </style>  
+   
+    <link href="css/icon-font.min.css" rel="stylesheet">
+    <link href="css/imagehover.css" rel="stylesheet" media="all">   
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/datepicker-style.css">
+    
+  
+</head>
+
+<body class="hold-transition sidebar-mini"> 
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+            title="Home">Home</a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit" data-toggle="tooltip" data-placement="bottom"
+          title="Search">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav menutopnav ml-auto d-none">
+        <li><a href="#" data-toggle="modal" data-target="#emailplanesModal" data-toggle="tooltip"
+            data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#talkheadpopupModal" data-toggle="tooltip"
+            data-placement="bottom" title="Contact"><i class="fa fa-phone"></i></a></li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+  
+        <!-- Messages Dropdown Menu -->
+       
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-warning navbar-badge" data-toggle="tooltip" data-placement="bottom"
+            title="Notifications">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" data-toggle="tooltip" data-placement="bottom"
+            title="Messages">
+              <i class="fa fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" data-toggle="tooltip" data-placement="bottom"
+            title="Requests">
+              <i class="fa fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" data-toggle="tooltip" data-placement="bottom"
+            title="Reports">
+              <i class="fa fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer" data-toggle="tooltip" data-placement="bottom"
+            title="See all notifications">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom"
+          title="Custom">
+            <i class="fa fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="../../index3.html" class="brand-link" data-toggle="tooltip" data-placement="bottom"
+      title="Home">
+        <img src="img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">D.A.Y Insurance</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block" data-toggle="tooltip" data-placement="bottom"
+            title="View Profile">Alexander Pierce</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="../widgets.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Dashboard">
+                <i class="nav-icon fa fa-th"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Book Insurance">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  Book Insurance
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Insurance 1">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Book Insurance v1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Insurance 2">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Book Insurance v2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Insurance 3">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Book Insurance v3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Manage">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  Manage
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Manage 1">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Manage v1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Manage 2">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Manage v2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Manage 3">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Manage v3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Support">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  Support
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Support 1">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Support v1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Support 2">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Support v2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Support 3">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Support v3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Report">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  Report
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Report 1">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Report v1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index2.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Report 2">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Report v2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                  title="Report 3">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>Report v3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../widgets.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Request CallBack">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  Request Callback
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../widgets.html" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+              title="Logout">
+                <p>
+                  Logout
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+ <div class="content-wrapper">  
+ <div class="container-fluid">
+
+    <!-- social icons right side -->
+    <div class="float-sm">
+      <div class="fl-fl float-wt">
+        <i class="fa fa-whatsapp  new-icoright"></i>
+        <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+        title="whatsapp">whatsapp</a>
+      </div>
+      <div class="fl-fl float-fb">
+        <i class="fa fa-facebook  new-icoright"></i>
+        <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+        title="Facebook">facebook</a>
+      </div>
+      <div class="fl-fl float-tw">
+        <i class="fa fa-twitter  new-icoright"></i>
+        <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+        title="Twitter">Twitter</a>
+      </div>
+      <div class="fl-fl float-lin">
+        <i class="fa fa-linkedin  new-icoright"></i>
+        <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+        title="Linked In">Linkedin</a>
+      </div>
+      <div class="fl-fl float-ins">
+        <i class="fa fa-instagram new-icoright"></i>
+        <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+        title="Instagram">instagram</a>
+      </div>
+      <div class="fl-fl float-pn">
+        <i class="fa fa-google-plus new-icoright"></i>
+        <a href="" target="_blank" data-toggle="tooltip" data-placement="left"
+        title="Google +"> Google +</a>
+      </div>
+    </div>
+       <!-- social icons right side -->
+     
+        <!-- Header -->
+        <div class="row headertop header">
+          <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row">
+
+                <div class="col-2 col-sm-3 col-md-3 col-lg-3 logodiv" data-toggle="tooltip" data-placement="bottom"
+                title="Home">
+                  <a href="#" class="desktoplogoimg"><img src="img/logo.png"></a>
+                  <a href="#" class="mobilelogoimg"><img src="img/logo-mob.png"></a>
+                </div>
+
+                <div class="col-10 col-sm-9 col-md-9 col-lg-9">
+                  <ul class="menutopnav ">
+                    <li><a href="#" data-toggle="modal" data-target="#emailplanesModal" data-toggle="tooltip"
+                        data-placement="bottom" title="Email"><i class="fa fa-envelope"></i> Email Plans</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#talkheadpopupModal" data-toggle="tooltip"
+                        data-placement="bottom" title="Contact"><i class="fa fa-phone"></i> Talk To Expert</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header -->
+
+        <!-- Banner -->
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 pd0 imgbannercontainerdiv">
+                <div class="slider fadesliderhomebackground">
+                    <div>
+                        <div class="image">
+                            <img class="homebannerimg" src="img/bg1.jpg" alt="" /> 
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image">
+                            <img class="homebannerimg" src="img/bg2.jpg" alt="" /> 
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-12 col-xs-12 col-sm-12 imgbannercontainercontdivmain">
+                    <div class="row homebannermainrowdiv">
+                        
+                        <div class="col-md-6">
+
+                            <!-- Car Manufacturer -->
+                            <div id="homestep1" class="formsearchwheretomaindiv">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev"><i class="fa fa-chevron-left"></i></span>
+                                        Select Car Manufacturer
+                                        <span class="close-btn-next" onclick="return openhomestep2();"><i class="fa fa-chevron-right" data-toggle="tooltip" data-placement="bottom" title="Navigate to Car Model"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">
+                                    <div class="col-md-12 searchmaindivcontsteps">
+
+                                        <div class="input-group flex-nowrap">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control myinputdesign" placeholder="Search manufacturer" data-toggle="tooltip" data-placement="bottom" title="Search Manufacturer">
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="col-md-12 stepscarlogolistdiv">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Chevrolet">
+                                                    <img class="carlogo1img" src="img/car-logo/car-logo1.png" alt="" />
+                                                    <p>Chevrolet</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Honda">
+                                                    <img class="carlogo2img" src="img/car-logo/car-logo2.png" alt="" />
+                                                    <p>Honda</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hyundai">
+                                                    <img class="carlogo3img" src="img/car-logo/car-logo3.png" alt="" />
+                                                    <p>Hyundai</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Maruti">
+                                                    <img class="carlogo4img" src="img/car-logo/car-logo4.png" alt="" />
+                                                    <p>Maruti</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tata">
+                                                    <img class="carlogo5img" src="img/car-logo/car-logo5.png" alt="" />
+                                                    <p>Tata</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Mahindra">
+                                                    <img class="carlogo6img" src="img/car-logo/car-logo6.png" alt="" />
+                                                    <p>Mahindra</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Ford">
+                                                    <img class="carlogo7img" src="img/car-logo/car-logo7.png" alt="" />
+                                                    <p>Ford</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Toyota">
+                                                    <img class="carlogo8img" src="img/car-logo/car-logo8.png" alt="" />
+                                                    <p>Toyota</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Skoda">
+                                                    <img class="carlogo9img" src="img/car-logo/car-logo9.png" alt="" />
+                                                    <p>Skoda</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Volkswagen">
+                                                    <img class="carlogo10img" src="img/car-logo/car-logo10.png" alt="" />
+                                                    <p>Volkswagen</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Renault">
+                                                    <img class="carlogo11img" src="img/car-logo/car-logo11.png" alt="" />
+                                                    <p>Renault</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Fiat">
+                                                    <img class="carlogo12img" src="img/car-logo/car-logo12.png" alt="" />
+                                                    <p>Flat</p>
+                                                </a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-12 btnothersstepsoutline">
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="bottom" title="Others">Others</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Car Model -->
+                            <div id="homestep2" class="formsearchwheretomaindiv" style="display: none;">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev" onclick="return closehomestep2();"><i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Navigate to Car Manufacturer"></i></span>
+                                        Select Car Model
+                                        <span class="close-btn-next" onclick="return openhomestep3();"><i class="fa fa-chevron-right" data-toggle="tooltip" data-placement="bottom" title="Navidate to Car Fuel type"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">
+                                    <div class="col-md-12 searchmaindivcontsteps">
+                                        <div class="input-group flex-nowrap">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control myinputdesign" placeholder="Search MARUTI model" data-toggle="tooltip" data-placement="bottom" title="Search car model">
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="col-md-12 stepscarfueltypelistdiv autoheightstepsmin">
+                                        <ul>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="ALTO">ALTO <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="ALTO 800">ALTO 800 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="ALTO K10">ALTO K10 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="BALENO">BALENO <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="CELERIO">CELERIO <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="CIAZ">CIAZ <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="DZIRE">DZIRE <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="EECO">EECO <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="ERTIGA">ERTIGA <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="IGNIS">IGNIS <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="RITZ">RITZ <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="S CROSS">S CROSS <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="S-Presso">S-Presso <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="SWIFT">SWIFT <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="SWIFT (2018)">SWIFT (2018) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Vitara Brezza">Vitara Brezza <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="WAGON R">WAGON R <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">XL6 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                            <!-- Car Fuel Type -->
+                            <div id="homestep3" class="formsearchwheretomaindiv">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev" onclick="return closehomestep3();"><i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Navigate to Car Model"></i></span>
+                                        Select Car Fuel Type
+                                        <span class="close-btn-next" onclick="return openhomestep4();"><i class="fa fa-chevron-right" data-toggle="tooltip" data-placement="bottom" title="Navigate to car variant"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">
+                                    <div class="col-md-12 stepscarfueltypelistdiv">
+                                        <ul>
+                                            <li><a href="#" class="selectedactivelist" data-toggle="tooltip" data-placement="bottom" title="CNG">CNG <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="PETROL">Petrol <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="EXTERNAL CNG KIT">External CNG Kit <span><i class="fa fa-angle-right"></i></span></a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <!-- Car Variant -->
+                            <div id="homestep4" class="formsearchwheretomaindiv">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev" onclick="return closehomestep4();"><i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Navigate to Car Fule type"></i></span>
+                                        Select Car Variant
+                                        <span class="close-btn-next" onclick="return openhomestep5();"><i class="fa fa-chevron-right" data-toggle="tooltip" data-placement="bottom" title="Navigate to Registration Year"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">                             <div class="col-md-12 stepscarfueltypelistdiv autoheightstepsmin">
+                                        <ul>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">LXI (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">VXI (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">LX (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">VXI AT (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">VXI (O) (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">Knightracer (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">Xplore (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">LX (O) (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">LXI (O) (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">VXI AMT (O) (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="XL6">VXI AMT (998 cc) <span><i class="fa fa-angle-right"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Car Registration Year -->
+                            <div id="homestep5" class="formsearchwheretomaindiv">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev" onclick="return closehomestep5();"><i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Navigate to car variant"></i></span>
+                                        Select Car Registration Year
+                                        <span class="close-btn-next" onclick="return openhomestep6();"><i class="fa fa-chevron-right" data-toggle="tooltip" data-placement="bottom" title="Navigate to city & Rto"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">                             <div class="col-md-12 stepscarregistrationlistdiv">
+                                        <ul>
+                                            <li><a class="selectedactivelist" href="#">Brand New Car <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2019 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2018 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2017 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2016 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2015 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2014 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2013 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2012 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2011 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2010 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2009 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2008 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2007 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2006 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2005 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2004 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2003 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2002 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2001 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">2000 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">1999 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">1998 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">1997 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">1996 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                            <li><a href="#">1995 <span><i class="fa fa-angle-right"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- City & RTO -->
+                            <div id="homestep6" class="formsearchwheretomaindiv">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev" onclick="return closehomestep6();"><i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Navigate to Registration Year"></i></span>
+                                        Select City & RTO
+                                        <span class="close-btn-next" onclick="return openhomestep7();"><i class="fa fa-chevron-right" data-toggle="tooltip" data-placement="bottom" title="Navigate to details"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">                             <div class="col-md-12 stepcontrtocitymaindiv">
+                                       <p>Where is your car registered?</p>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-search"></i></label>
+                                            </div>
+                                            <select class="custom-select myinputdesign" id="inputGroupSelect01">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 stepcontrtocitymaindiv">
+                                        <p>Which year was it registered?</p>
+                                         <div class="input-group">
+                                             <div class="input-group-prepend">
+                                             <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-search"></i></label>
+                                             </div>
+                                             <select class="custom-select myinputdesign" id="inputGroupSelect01">
+                                             <option selected>Choose...</option>
+                                             <option value="1">One</option>
+                                             <option value="2">Two</option>
+                                             <option value="3">Three</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+
+                            <!-- Fill Your Details -->
+                            <div id="homestep7" class="formsearchwheretomaindiv">
+                                <div class="col-md-12">
+                                    <h3 class="headingsearchhome innerstepheadtag">
+                                        <span class="close-btn-prev" onclick="return closehomestep7();"><i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Navidate to city & Rto"></i></span>
+                                        Please Fill Your Details
+                                        <span class="close-btn-next"><i class="fa fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-12 maincontainerdivstepscont">                             <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="mylable">Full Name</label>
+                                            <input type="text" class="form-control myinputdesign" id="name" placeholder="Enter Full Name" value="Piyush">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mylable">Email</label>
+                                            <input type="email" class="form-control myinputdesign" id="email" placeholder="Enter Email" value="dhari@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mylable">Mobile No.</label>
+                                            <input type="text" class="form-control myinputdesign" id="number" placeholder="Enter Number" value="989898989898">
+                                        </div>
+                                        <div class="form-group buttongrupsteps">
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Continue">Continue</button>
+                                        </div>
+                                        <p class="ptagcontstepslinks">By clicking on "Continue", you agree to our <a href="#">Privacy Policy</a> & <a href="#">Terms of Use</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 leftconthomebanner">
+                            <!-- <img src="img/banner1.jpg" alt="" /> -->
+                            <div class="col-md-12">
+                                <div class="slider leftsidebannerslider">
+                                    <div>
+                                        <img src="img/ad1.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <img src="img/ad2.jpg" alt="" />
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <marquee class="marqueebannerhome"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor!</p></marquee>
+                            </div>
+                         </div>
+                         <div class="col-md-1"></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Banner -->    
+    
+        <!-- Footer -->
+        <div class="row footermainrowdiv">
+            <div class="container">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 col-sm-12 leftsideaboutfootcont">
+                            <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+
+                            <p>The product information for comparison displayed on this website is of the insurers with whom our company has an agreement.</p>
+                                    
+                            <p>Product information is authentic and solely based on the information received from the Insurer © Copyright 2019 pinkitravels.com. All Rights Reserved.</p>
+                                    
+                            <p>All savings provided by insurers.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+
+         <!-- Email Plane Modal -->
+        <div class="modal fade" id="emailplanesModal" tabindex="-1" role="dialog" aria-labelledby="emailplanesModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">                    
+                        <div class="col-md-12 ">
+
+                            <div class="row">
+                                <div class="col-md-12 closebtnpopupdiv">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="form-group">
+                                        <label class="mylable">Email address</label>
+                                        <input type="email" class="form-control myinputdesign" id="emailpopup" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>                                   
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Email Plane Modal close -->
+
+        <!-- talk popup header Plane Modal -->
+        <div class="modal fade" id="talkheadpopupModal" tabindex="-1" role="dialog" aria-labelledby="talkheadpopupModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">               
+
+                    <div class="modal-body">                    
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-12 closebtnpopupdiv">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 talkheadpopupheader">
+                                    <h5><i class="fa fa-phone"></i></h5>
+                                    <h3>We will call you soon!</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="ptagtalkpopupheader">You can also reach us directily on these toll-free numbers:</p>
+                                </div>
+                                <div class="col-md-6 calltalknomaindivpopuphead">
+                                    <h3>Have Not Paid Yet (Sales)</h3>
+                                    <p>9999-999-9999</p>
+                                </div> 
+                                <div class="col-md-6 calltalknomaindivpopuphead">
+                                    <h3>Have Already Paid (Services)</h3>
+                                    <p>9999-999-9999</p>
+                                </div>           
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- talk popup header Modal close -->
+     
+    
+    </div>
+    
+</div>
+<footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.1
+    </div>
+    <strong>Copyright &copy; 2014-2020 <a href="#">D.A.Y Insurance Broker Ltd</a>.</strong> All rights
+    reserved.
+  </footer>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/adminlte.min.js"></script>
+    <script src="js/jquery-ui-datepicker.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/signinpass.js"></script>  
+    <script src="js/slick.js"></script>  
+    
+    <script>
+            $( function() {
+            $( "#datepickerone" ).datepicker();
+            } );
+            $( function() {
+            $( "#datepickertwo" ).datepicker();
+            } );
+    </script>
+  
+    <script>     
+         $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('.header').addClass("d-none");
+				$('.main-header').addClass("fixed-top");
+				$('.menutopnav').addClass("d-flex");
+            } else {
+                $('.header').removeClass("d-none");
+				$('.main-header').removeClass("fixed-top");
+				$('.menutopnav').addClass("d-none");
+				$('.menutopnav').removeClass("d-flex");
+            }
+        });
+        $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>  
+
+    <script>       
+        // Slick Slider
+        $(document).ready(function () {
+        $('.singleroomsuites').slick();
+        $('.leftsidebannerslider').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            autoplay: true,
+            autoplaySpeed: 2000,            
+            
+        }); 
+
+        $('.fadesliderhomebackground').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,           
+         });           
+
+        });
+        // Slick Slider
+    </script>
+
+
+
+</body>
+</html>
