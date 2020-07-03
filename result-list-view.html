@@ -396,7 +396,7 @@
                     <div class="container">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 headingcontsubheader">
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7 headingcontsubheader d-flex justify-content-between align-items-center">
                                     <h3>MARUTI ALTO LX CNG (796 cc)</h3>
                                     <ul>
                                         <li>Private Car <span></span></li>
@@ -405,34 +405,22 @@
                                         <li>DL1 (NORTH DELHI)</li>
                                     </ul>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex align-items-center">
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 d-flex align-items-center">
                                     <button class="btn btn-primary btn-sm" data-toggle="collapse"
                                         data-target="#collapseExample" aria-expanded="false"
                                         aria-controls="collapseExample" data-toggle="tooltip" data-placement="bottom"
                                         title="Mdify Search">Modify Search</button>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 listingrightsideheaddiv m-auto">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 listingrightsideheaddiv m-auto">
                                     <div class="row">
-                                        <div class="col-4 listheadericonstop">
-                                            <ul>
-                                                <li class="desktophidefiltertag"><a href="#!"
-                                                        onclick="opensidebarfilter()"><i class="fa fa-filter"
-                                                            data-toggle="tooltip" data-placement="bottom"
-                                                            title="Filter List"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-th" data-toggle="tooltip"
-                                                            data-placement="bottom" title="Show as Grid"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-list-ul" data-toggle="tooltip"
-                                                            data-placement="bottom" title="Show as List"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-2 sendemailmaindivrightside">
+                                        <div class="col-4 sendemailmaindivrightside">
                                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                                 data-toggle="tooltip" data-placement="bottom" title="Send Email"
                                                 data-target="#sendemailModal"><span class="mobview_hidden">Send
                                                     Email</span><span class="desktophidefiltertag"><i
                                                         class="fa fa-envelope"></i></span></button>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-8">
                                             <select class="custom-select">
                                                 <option value="NONE">Sort by Best Match</option>
                                                 <option value="LTOH">Premium: Low to High</option>
@@ -600,9 +588,10 @@
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 filtermaindiv">
                                 <div class="row mg0gap mobview_hidden">
                                     <div class="col-12 col-sm-1 col-md-1 col-lg-1 pd0">
-                                        <h3 class="headingfiltertopstrip headingfiltertxthead"  id="applyFilterText"><i
+                                        <h3 class="headingfiltertopstrip headingfiltertxthead" id="applyFilterText"><i
                                                 class="fa fa-filter"></i> Filters</h3>
-                                        <button class="btn btn-primary" style="display:none" id="applyFilter">Apply Filter</button>
+                                        <button class="btn btn-primary" style="display:none" id="applyFilter">Apply
+                                            Filter</button>
                                     </div>
                                     <div class="col-12 col-sm-11 col-md-11 col-lg-11">
                                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -637,6 +626,12 @@
                                                     href="#pills-liability" role="tab" aria-controls="pills-liability"
                                                     aria-selected="false">Liability Covers</a>
                                             </li>
+
+                                            <li class="nav-item mr-3 d-flex align-items-center" ><a href="#"><i class="fa fa-th" data-toggle="tooltip"
+                                                        data-placement="bottom" title="Show as Grid"></i></a></li>
+                                            <li class="nav-item mr-3 d-flex align-items-center" ><a href="#"><i class="fa fa-list-ul" data-toggle="tooltip"
+                                                        data-placement="bottom" title="Show as List"></i></a></li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -824,118 +819,118 @@
                                     </div>
                                     <div class="collapse" id="pills-addons" role="tabpanel"
                                         aria-labelledby="pills-addons-tab">
-                                        <div class="filterinnerdiv">
-                                            <div class="custom-control custom-checkbox">
+                                        <div class="filterinnerdiv row">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PAToOwnerDriverCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PAToOwnerDriverCover">NCB Protection</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input" id="DriverCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom" for="DriverCover">24x7
                                                     Consumables Cover</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Roadside Assistance 24X7</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Zero Depreciation</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Invoice Cover</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Engine Protector</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Passenger Cover</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Passenger Assistance</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PAToOwnerDriverCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PAToOwnerDriverCover">Inconvenience Allowance</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input" id="DriverCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom" for="DriverCover">24x7
                                                     Key Replacement</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Tyre Secure</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">LL to Paid Driver</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Accidental Shield</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Conveyance Benefit</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Personal Baggage</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PersonalAccidentCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
                                                     data-placement="bottom" title="Custom"
                                                     for="PersonalAccidentCover">Rim Damage Cover</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div class="custom-control custom-checkbox col-2">
                                                 <input type="checkbox" class="custom-control-input"
                                                     id="PAToOwnerDriverCover">
                                                 <label class="custom-control-label" data-toggle="tooltip"
@@ -1157,12 +1152,38 @@
                                                 </div>
                                             </div>
                                             <div class="form-group mr-2">
+
+                                                <select class="input-md form-control"
+                                                    data-val="true"
+                                                    data-val-number="The field PACOVERYEAR must be a number."
+                                                    data-val-required="The PACOVERYEAR field is required."
+                                                    name="PACOVERYEAR">
+                                                    <option selected="selected" value="0">Unname Passenger
+                                                    </option>
+                                                    <option value="1">1 Lakhs</option>
+                                                    <option value="2">2 Lakhs</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group mr-2">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" id="test2">
                                                     <label class="custom-control-label" data-toggle="tooltip"
                                                         data-placement="bottom" title="Custom" for="test2">PA
                                                         Cover</label>
                                                 </div>
+                                            </div>
+                                            <div class="form-group mr-2">
+
+                                                <select class="input-md form-control"
+                                                    data-val="true"
+                                                    data-val-number="The field PACOVERYEAR must be a number."
+                                                    data-val-required="The PACOVERYEAR field is required."
+                                                    name="PACOVERYEAR">
+                                                    <option selected="selected" value="0">Unname Passenger
+                                                    </option>
+                                                    <option value="1">1 Lakhs</option>
+                                                    <option value="2">2 Lakhs</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -2783,7 +2804,7 @@
         });
         $(function () {
             $('#filterSidebarmob .nav-pills .nav-item .nav-link').click((e) => {
-                
+
                 $('#filterSidebarmob .tab-content .collapse').each((index, element) => {
                     if ('#' + $(element).attr("id") != $(e.currentTarget).attr("href"))
                         $(element).removeClass("show");
